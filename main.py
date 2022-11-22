@@ -14,13 +14,22 @@ def tweet(api: tweepy.API, message: str):
     api.get_favorites
     print("tweetei com sucesso!")
     
+def retweet(api: tweepy.API, tweetID: int):
+    api.retweet(tweetID);
+
+def unretweet(api: tweepy.API, tweetID: int):
+    api.unretweet(tweetID)
+    
+def getUserData(api: tweepy.API, username: str):
+    return api.get_user(screen_name = username)
+
+def writeDataJson(data, filename = str):
+    file = open(filename+".json", "w")
+    file.write(json.dumps(data))
+
 
 if __name__ == '__main__':
     api = api()
-    likes_bernardo = api.get_favorites(id = 2882428500, count=30)
-    for likes in likes_bernardo:
-        try:
-             api.unretweet(likes._json["id"])
-             print("RT concluido")
-        except:
-            ""
+    
+    bryan = getUserData(api, "sr_wille")
+    writeDataJson(bryan._json , "user_bryan")
