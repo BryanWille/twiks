@@ -1,6 +1,9 @@
+import services.database as db
+import models.user as twitteruser
 import json
 import tweepy
 import keys.keys as keys
+
 
 
 def api():
@@ -30,5 +33,7 @@ def writeDataJson(data, filename = str):
 
 if __name__ == '__main__':
     api = api()
-    bryan = getUserData(api, "bernardokbt")
-    writeDataJson(bryan._json , "user_bernardo")
+    usuario = getUserData(api, "bernardokbt")
+    pessoa = twitteruser.User.mapToUser(user_map=usuario._json)
+    mapa_pessoa = pessoa.userToMap()
+    db.Database.createUserInfo(mapa_pessoa)
