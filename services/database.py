@@ -10,4 +10,12 @@ class Database:
         db = firestore.client()
         doc_ref = db.collection('users').document(user_map['screen_name'])
         doc_ref.set(user_map)
-        print("sent sucessfully")
+        print("User Sent Sucessfully")
+        
+    def createLikeInfo(user_map):
+        cred = credentials.Certificate("keys/firebase-key.json")
+        app = firebase_admin.initialize_app(cred)
+        db = firestore.client()
+        doc_ref = db.collection('users').document(user_map['screen_name'])
+        doc_ref.set(user_map)
+        print("User Sent Sucessfully")
