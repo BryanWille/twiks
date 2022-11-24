@@ -30,6 +30,5 @@ def writeDataJson(data, filename = str):
 
 if __name__ == '__main__':
     api = api()
-    
-    bryan = getUserData(api, "sr_wille")
-    writeDataJson(bryan._json , "user_bryan")
+    bryan = getUserData(api, "bernardokbt")
+    writeDataJson(bryan._json , "user_bernardo")
