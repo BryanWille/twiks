@@ -10,9 +10,9 @@
     "entities": {
         "description": {
             "urls": []
-        }
+        }   
     },
-    "protected": true,
+    "protected": false,
     "followers_count": 0,
     "friends_count": 114,
     "listed_count": 0,
