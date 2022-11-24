@@ -1,6 +1,6 @@
 import json
 import tweepy
-import keys
+import keys.keys as keys
 
 
 def api():
