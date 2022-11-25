@@ -39,7 +39,7 @@ def createFavDataBase(api: tweepy.API, user_name):
     
 if __name__ == '__main__':
     api = api()
-    user_name = "gaules"
+    user_name = "sr_wille"
     createUserDataBase(api, user_name=user_name)
     createFavDataBase(api, user_name)
 

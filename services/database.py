@@ -25,3 +25,10 @@ class Database:
         docs = firestore.client().collection('users').document(username.lower()).collection('favourites').stream()
         for doc in docs:
             print()
+
+
+db = firestore.client()            
+#docs = db.collection(u'users').document('sr_wille').collection('favourites').document('Coeluh').collection('posts').stream()
+docs = db.collection(u'users').document('sr_wille').collection('favourites').stream()
+docs_dict = {doc.id:doc.to_dict() for doc in docs}
+print(docs_dict)
