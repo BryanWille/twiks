@@ -28,23 +28,21 @@ def getUserData(api: tweepy.API, username: str):
 def getAllLikes(api: tweepy.API, user_id, like_count: int):
     return api.get_favorites(id=user_id, count=like_count)
 
-def createUserDataBase(user_name):
-    api = api()
+def createUserDataBase(api: tweepy.API, user_name):
     db.Database.createUserInfo(getUserData(api, user_name)._json)
 
-def createFavDataBase(user_name):
-    api = api()
-    user = getUserData(api, user_name)
+def createFavDataBase(api: tweepy.API, user_name):
+    user = getUserData(api, user_name)._json
     favourite_count = getAllLikes(api, user['screen_name'], user['favourites_count'])
     for c in range(0, len(favourite_count)):
         db.Database.createStatusInfo(favourite_count[c]._json, user_name)
     
 if __name__ == '__main__':
-    user_name = "sr_wille"
-    # createUserDataBase(user_name=user_name)
-    
-    # createFavDataBase(user_name)
+    api = api()
+    user_name = "gaules"
+    createUserDataBase(api, user_name=user_name)
+    createFavDataBase(api, user_name)
 
-    fav_list = db.Database.retrieveStatusInfo(username=user_name)
-    print(fav_list)
+    #fav_list = db.Database.retrieveStatusInfo(username=user_name)
+    #print(fav_list)
     
