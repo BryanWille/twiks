@@ -1,8 +1,7 @@
 import services.database as db
-import json
 import tweepy
 import keys.keys as keys
-
+import services.charts as ch
 
 
 def api():
@@ -39,10 +38,11 @@ def createFavDataBase(api: tweepy.API, user_name):
     
 if __name__ == '__main__':
     api = api()
-    user_name = "monark"
+    user_name = "felipeneto"
     createUserDataBase(api, user_name=user_name)
     createFavDataBase(api, user_name)
-
-    #fav_list = db.Database.retrieveStatusInfo(username=user_name)
-    #print(fav_list)
+    #ch.Charts.pieChartLikes(user_name, 4)
+    bernardo = ch.Charts(user_name)
+    bernardo.mostCommonLikedCreatedHour()
+    
     
