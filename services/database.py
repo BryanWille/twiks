@@ -3,39 +3,52 @@ from firebase_admin import firestore
 from firebase_admin import credentials
 
 class Database:
+    cred = credentials.Certificate("keys/firebase-key.json")
+    app = firebase_admin.initialize_app(cred)
     
-    def __init__(self, user_name):
-        self.username = user_name
-        self.cred = credentials.Certificate("keys/firebase-key.json")
-        self.app = firebase_admin.initialize_app(self.cred)
-        self.db = firestore.client()
+    def doesUserExist(user_name: str, user_id: str):
+        db = firestore.client().collection('users')
+        return db.document(user_name).collection("user_info").document(user_id).get().exists
 
-    def createUserInfo(user_map):
-        doc_ref = firestore.client().collection('users').document(user_map['screen_name'].lower()).collection("user_info").document(user_map['id_str'])
+    def createUserInfo(user_map, user_name: str):
+        doc_ref = firestore.client().collection('users').document(user_name.lower()).collection("user_info").document(user_map['id_str'])
         doc_ref.set(user_map)
         print("User Sucessfully Sent")
 
-    def createStatusInfo(self, user_map):
+    def createStatusInfo(user_map, user_name: str):
         try:
-            doc_ref = firestore.client().collection('users').document(self.username.lower()).collection("favourites").document(user_map['id_str'])
+            doc_ref = firestore.client().collection('users').document(user_name.lower()).collection("favourites").document(user_map['id_str'])
             doc_ref.set(user_map)
             print("Favourite Sucessfully Sent")
         except Exception as e:
-            print("Favourite not Sent")
             print(e)
-            print(f"Tweet id: {user_map['id']}")
-            
-    def createRetweetInfo(self, user_map: map):
-        print()
     
+    def createPostsInfo(user_map: map, user_name: str):
+        try:
+            doc_ref = firestore.client().collection('users').document(user_name.lower()).collection("posts").document(user_map['id_Str'])
+            doc_ref.set(user_map)
+            print("Post Sucessfuly Saved")
+        except Exception as e:
+            print(e)
     
-    def retrieveStatusInfo(self):
-        db = firestore.client()            
-        docs = db.collection(u'users').document(self.username).collection('favourites').stream()
-        
+    def retrieveUserInfo( user_name: str):
+        docs = firestore.client().collection('users').document(user_name.lower()).collection('user_info').stream()
         fav_list = []
         for doc in docs:
             fav_list.append(doc.to_dict())
-            
+        return fav_list
+    
+    def retrieveStatusInfo( user_name: str):
+        docs = firestore.client().collection('users').document(user_name.lower()).collection('favourites').stream()
+        fav_list = []
+        for doc in docs:
+            fav_list.append(doc.to_dict())
         return fav_list
 
+    
+    def retrievePostsInfo( user_name: str):
+        docs = firestore.client().collection('users').document(user_name.lower()).collection('posts').stream()
+        post_list = []
+        for doc in docs:
+            post_list.append(doc.to_dict())
+        return post_list
