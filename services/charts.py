@@ -28,8 +28,8 @@ class Charts:
         plt.title(f"Users that {self.username} liked status most!")
         plt.show()
     
-    def mostCommonLikedCreatedHour(self):
-        map = db.Database.retrieveStatusInfo(username=self.username)
+    def mostCommonHour(self):
+        map = self.db.retrievePostsInfo(self.username)
         created_at = []
         
         for hour in map:

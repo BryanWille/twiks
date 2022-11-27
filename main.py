@@ -2,7 +2,7 @@ import services.database as db
 import tweepy
 import keys.keys as keys
 import services.charts as ch
-
+import json
 
 def api():
     auth = tweepy.OAuth1UserHandler(keys.api_key, keys.api_secret)
@@ -21,6 +21,9 @@ def unretweet(api: tweepy.API, tweetID: int):
 def getUserData(api: tweepy.API, username: str):
     return api.get_user(screen_name = username)
 
+def getUserId(api: tweepy.API, username: str):
+    return getUserData(api, username)._json['id_str'] 
+
 def createUserDataBase(api: tweepy.API, user_name):
     db.Database.createUserInfo(getUserData(api, user_name)._json, user_name)
 
@@ -31,10 +34,10 @@ def createFavDataBase(api: tweepy.API, user_name):
         db.Database.createStatusInfo(favourites._json, user_name)
 
 def createStatusDataBase(api: tweepy.API, user_name):
-    user = getUserData(api, user_name)._json
-    status_count = api.get_status(id=user['screen_name'], count=user['statuses_count'])
-    for status in status_count:
-        db.Database.createPosstInfo(status._json, user_name)
+    user_id = getUserId(api, user_name)
+    for tweet in tweepy.Cursor(api.user_timeline,id=user_id).items():
+        db.Database.createPostsInfo(tweet._json, user_name)
+       
         
 def createAllUserData(api: tweepy.API, user_name):
     user = api.get_user(screen_name = user_name)
@@ -47,8 +50,12 @@ def createAllUserData(api: tweepy.API, user_name):
     
 if __name__ == '__main__':
     api = api()
-    user_name = "igor_3k"
-    createAllUserData(api, user_name)
+    user_name = "sr_wille"
+    #createStatusDataBase(api, user_name)
+    eu = ch.Charts(user_name)
+    eu.mostCommonHour()
+    
+    #createAllUserData(api, user_name)
 
     
     

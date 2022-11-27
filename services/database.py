@@ -25,7 +25,7 @@ class Database:
     
     def createPostsInfo(user_map: map, user_name: str):
         try:
-            doc_ref = firestore.client().collection('users').document(user_name.lower()).collection("posts").document(user_map['id_Str'])
+            doc_ref = firestore.client().collection('users').document(user_name.lower()).collection("posts").document(user_map['id_str'])
             doc_ref.set(user_map)
             print("Post Sucessfuly Saved")
         except Exception as e:
