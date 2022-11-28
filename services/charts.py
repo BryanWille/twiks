@@ -42,7 +42,7 @@ class Charts:
         plt.bar(x.index, x.values )
         
         plt.title(f"Most common likes from tweet created hour from {self.username}")
-        plt.ylabel("Amount of likes")
-        plt.xlabel("Liked hour")
+        plt.ylabel("Amount of tweets")
+        plt.xlabel("Tweet hour")
         
         plt.show()
