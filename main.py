@@ -41,7 +41,7 @@ def createStatusDataBase(api: tweepy.API, user_name):
         
 def createAllUserData(api: tweepy.API, user_name):
     user = api.get_user(screen_name = user_name)
-    if not db.Database.doesUserExist(user_name, user._json['id_str']):
+    if db.Database.doesUserExist(user_name, user._json['id_str']):
         createUserDataBase(api, user_name)
         createStatusDataBase(api, user_name)
         createFavDataBase(api, user_name)
@@ -50,10 +50,10 @@ def createAllUserData(api: tweepy.API, user_name):
     
 if __name__ == '__main__':
     api = api()
-    user_name = "sr_wille"
+    user_name = "felipeneto"
     #createStatusDataBase(api, user_name)
     eu = ch.Charts(user_name)
-    eu.mostCommonHour()
+    eu.pieChartLikes(3)
     
     #createAllUserData(api, user_name)
 
