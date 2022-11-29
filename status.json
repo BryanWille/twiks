@@ -1,282 +1,97 @@
 {
-    "created_at": "Fri Nov 25 01:35:51 +0000 2022",
-    "id": 1595954383598256129,
-    "id_str": "1595954383598256129",
-    "text": "Que feraaa!!!!! https://t.co/i4VUzL6RYF",
-    "truncated": false,
-    "entities": {
-        "hashtags": [],
-        "symbols": [],
-        "user_mentions": [],
-        "urls": [
-            {
-                "url": "https://t.co/i4VUzL6RYF",
-                "expanded_url": "https://twitter.com/CartDasCavernas/status/1595895321321783301",
-                "display_url": "twitter.com/CartDasCaverna\u2026",
-                "indices": [
-                    16,
-                    39
-                ]
-            }
-        ]
-    },
-    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
-    "in_reply_to_status_id": null,
-    "in_reply_to_status_id_str": null,
-    "in_reply_to_user_id": null,
-    "in_reply_to_user_id_str": null,
-    "in_reply_to_screen_name": null,
+    "created_at": "Sat Jan 26 16:38:06 +0000 2019",
+    "geo": null,
+    "favorited": false,
+    "id": 1089200820393050112,
+    "retweet_count": 0,
+    "contributors": null,
     "user": {
-        "id": 902953691879223305,
-        "id_str": "902953691879223305",
-        "name": "Richarlison Andrade",
-        "screen_name": "richarlison97",
-        "location": "Inglaterra, Reino Unido",
-        "description": "Atacante/Forward @SpursOfficial - Perfil controlado por mim e pela minha assessoria: @winningcomunica | @botrel \ud83c\udde7\ud83c\uddf7Copa Am\u00e9rica\ud83e\udd47 Olimp\u00edadas \ud83e\udd47",
-        "url": "https://t.co/wIOfMkrgTh",
+        "created_at": "Sun May 18 23:30:05 +0000 2014",
+        "is_translation_enabled": false,
+        "notifications": false,
+        "is_translator": false,
+        "listed_count": 0,
+        "lang": null,
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1579333260064309248/9Z_7_kbl_normal.jpg",
+        "default_profile_image": false,
+        "withheld_in_countries": [],
+        "name": "B(r) = y+a*n",
+        "profile_text_color": "333333",
+        "translator_type": "none",
+        "id_str": "2505805729",
+        "verified": false,
+        "contributors_enabled": false,
+        "followers_count": 0,
+        "protected": true,
+        "time_zone": null,
+        "profile_background_color": "C0DEED",
+        "utc_offset": null,
+        "location": "",
+        "default_profile": true,
+        "description": "",
+        "friends_count": 114,
+        "favourites_count": 1007,
+        "id": 2505805729,
+        "profile_use_background_image": true,
+        "url": null,
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_link_color": "1DA1F2",
+        "screen_name": "Sr_Wille",
+        "has_extended_profile": true,
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/1579333260064309248/9Z_7_kbl_normal.jpg",
+        "geo_enabled": true,
         "entities": {
-            "url": {
-                "urls": [
-                    {
-                        "url": "https://t.co/wIOfMkrgTh",
-                        "expanded_url": "http://www.richarlison.com.br",
-                        "display_url": "richarlison.com.br",
-                        "indices": [
-                            0,
-                            23
-                        ]
-                    }
-                ]
-            },
             "description": {
                 "urls": []
             }
         },
-        "protected": false,
-        "followers_count": 1079101,
-        "friends_count": 284,
-        "listed_count": 634,
-        "created_at": "Wed Aug 30 17:58:31 +0000 2017",
-        "favourites_count": 7409,
-        "utc_offset": null,
-        "time_zone": null,
-        "geo_enabled": false,
-        "verified": true,
-        "statuses_count": 4350,
-        "lang": null,
-        "contributors_enabled": false,
-        "is_translator": false,
-        "is_translation_enabled": false,
-        "profile_background_color": "000000",
-        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
-        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
-        "profile_background_tile": false,
-        "profile_image_url": "http://pbs.twimg.com/profile_images/1441463315008565248/Y_0Df6Nf_normal.jpg",
-        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1441463315008565248/Y_0Df6Nf_normal.jpg",
-        "profile_banner_url": "https://pbs.twimg.com/profile_banners/902953691879223305/1590444897",
-        "profile_link_color": "FAB81E",
-        "profile_sidebar_border_color": "000000",
-        "profile_sidebar_fill_color": "000000",
-        "profile_text_color": "000000",
-        "profile_use_background_image": false,
-        "has_extended_profile": true,
-        "default_profile": false,
-        "default_profile_image": false,
         "following": false,
-        "follow_request_sent": false,
-        "notifications": false,
-        "translator_type": "none",
-        "withheld_in_countries": []
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "statuses_count": 740,
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/2505805729/1647732691",
+        "follow_request_sent": false
     },
-    "geo": null,
+    "lang": "pt",
+    "truncated": false,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "text": "@rbtocsgo @aakkari @furiagg uma nova mibr n\u00e3o, pq se fosse eles tinha perdido :P  #DiaDeFURIA",
+    "entities": {
+        "hashtags": [
+            {
+                "text": "DiaDeFURIA",
+                "indices": [
+                    82,
+                    93
+                ]
+            }
+        ],
+        "user_mentions": [
+            {
+                "screen_name": "aakkari",
+                "id_str": "43760956",
+                "id": 43760956,
+                "indices": [
+                    10,
+                    18
+                ],
+                "name": "andre akkari"
+            }
+        ],
+        "urls": [],
+        "symbols": []
+    },
+    "id_str": "1089200820393050112",
+    "favorite_count": 0,
+    "in_reply_to_user_id_str": null,
+    "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+    "retweeted": false,
+    "is_quote_status": false,
+    "in_reply_to_status_id": null,
     "coordinates": null,
     "place": null,
-    "contributors": null,
-    "is_quote_status": true,
-    "quoted_status_id": 1595895321321783301,
-    "quoted_status_id_str": "1595895321321783301",
-    "quoted_status": {
-        "created_at": "Thu Nov 24 21:41:09 +0000 2022",
-        "id": 1595895321321783301,
-        "id_str": "1595895321321783301",
-        "text": "Tenho nem caneta para desenhar um voo desse.\nBravo #Richarlison https://t.co/sCMorRANEh",
-        "truncated": false,
-        "entities": {
-            "hashtags": [
-                {
-                    "text": "Richarlison",
-                    "indices": [
-                        51,
-                        63
-                    ]
-                }
-            ],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": [],
-            "media": [
-                {
-                    "id": 1595895318557724673,
-                    "id_str": "1595895318557724673",
-                    "indices": [
-                        64,
-                        87
-                    ],
-                    "media_url": "http://pbs.twimg.com/media/FiXCVjlXkAEUy0i.jpg",
-                    "media_url_https": "https://pbs.twimg.com/media/FiXCVjlXkAEUy0i.jpg",
-                    "url": "https://t.co/sCMorRANEh",
-                    "display_url": "pic.twitter.com/sCMorRANEh",
-                    "expanded_url": "https://twitter.com/CartDasCavernas/status/1595895321321783301/photo/1",
-                    "type": "photo",
-                    "sizes": {
-                        "thumb": {
-                            "w": 150,
-                            "h": 150,
-                            "resize": "crop"
-                        },
-                        "large": {
-                            "w": 918,
-                            "h": 918,
-                            "resize": "fit"
-                        },
-                        "medium": {
-                            "w": 918,
-                            "h": 918,
-                            "resize": "fit"
-                        },
-                        "small": {
-                            "w": 680,
-                            "h": 680,
-                            "resize": "fit"
-                        }
-                    }
-                }
-            ]
-        },
-        "extended_entities": {
-            "media": [
-                {
-                    "id": 1595895318557724673,
-                    "id_str": "1595895318557724673",
-                    "indices": [
-                        64,
-                        87
-                    ],
-                    "media_url": "http://pbs.twimg.com/media/FiXCVjlXkAEUy0i.jpg",
-                    "media_url_https": "https://pbs.twimg.com/media/FiXCVjlXkAEUy0i.jpg",
-                    "url": "https://t.co/sCMorRANEh",
-                    "display_url": "pic.twitter.com/sCMorRANEh",
-                    "expanded_url": "https://twitter.com/CartDasCavernas/status/1595895321321783301/photo/1",
-                    "type": "photo",
-                    "sizes": {
-                        "thumb": {
-                            "w": 150,
-                            "h": 150,
-                            "resize": "crop"
-                        },
-                        "large": {
-                            "w": 918,
-                            "h": 918,
-                            "resize": "fit"
-                        },
-                        "medium": {
-                            "w": 918,
-                            "h": 918,
-                            "resize": "fit"
-                        },
-                        "small": {
-                            "w": 680,
-                            "h": 680,
-                            "resize": "fit"
-                        }
-                    }
-                }
-            ]
-        },
-        "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
-        "in_reply_to_status_id": null,
-        "in_reply_to_status_id_str": null,
-        "in_reply_to_user_id": null,
-        "in_reply_to_user_id_str": null,
-        "in_reply_to_screen_name": null,
-        "user": {
-            "id": 38667845,
-            "id_str": "38667845",
-            "name": "Gilmar",
-            "screen_name": "CartDasCavernas",
-            "location": "S\u00e3o Paulo",
-            "description": "Livros  #BrasilEmCharges",
-            "url": "https://t.co/V5HGaRrYY7",
-            "entities": {
-                "url": {
-                    "urls": [
-                        {
-                            "url": "https://t.co/V5HGaRrYY7",
-                            "expanded_url": "https://cartunistadascavernas.company.site",
-                            "display_url": "cartunistadascavernas.company.site",
-                            "indices": [
-                                0,
-                                23
-                            ]
-                        }
-                    ]
-                },
-                "description": {
-                    "urls": []
-                }
-            },
-            "protected": false,
-            "followers_count": 12297,
-            "friends_count": 415,
-            "listed_count": 166,
-            "created_at": "Fri May 08 13:45:03 +0000 2009",
-            "favourites_count": 15685,
-            "utc_offset": null,
-            "time_zone": null,
-            "geo_enabled": true,
-            "verified": false,
-            "statuses_count": 12176,
-            "lang": null,
-            "contributors_enabled": false,
-            "is_translator": false,
-            "is_translation_enabled": false,
-            "profile_background_color": "B3C3CC",
-            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_tile": false,
-            "profile_image_url": "http://pbs.twimg.com/profile_images/1333551159609593859/u_9xXOQ9_normal.jpg",
-            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1333551159609593859/u_9xXOQ9_normal.jpg",
-            "profile_banner_url": "https://pbs.twimg.com/profile_banners/38667845/1668259468",
-            "profile_link_color": "ABB8C2",
-            "profile_sidebar_border_color": "000000",
-            "profile_sidebar_fill_color": "EEEBCE",
-            "profile_text_color": "333333",
-            "profile_use_background_image": true,
-            "has_extended_profile": false,
-            "default_profile": false,
-            "default_profile_image": false,
-            "following": false,
-            "follow_request_sent": false,
-            "notifications": false,
-            "translator_type": "none",
-            "withheld_in_countries": []
-        },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 353,
-        "favorite_count": 3675,
-        "favorited": false,
-        "retweeted": false,
-        "possibly_sensitive": false,
-        "lang": "pt"
-    },
-    "retweet_count": 1249,
-    "favorite_count": 36694,
-    "favorited": false,
-    "retweeted": false,
-    "possibly_sensitive": false,
-    "lang": "pt"
+    "in_reply_to_screen_name": null
 }

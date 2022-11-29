@@ -3,6 +3,8 @@ import tweepy
 import keys.keys as keys
 import services.charts as ch
 import json
+import services.save_files as sf
+import os
 
 def api():
     auth = tweepy.OAuth1UserHandler(keys.api_key, keys.api_secret)
@@ -50,10 +52,15 @@ def createAllUserData(api: tweepy.API, user_name):
     
 if __name__ == '__main__':
     api = api()
-    user_name = "neymarjr"
-    createAllUserData(api, user_name)
-    neymar = ch.Charts(user_name)
-    neymar.pieChartLikes(3)
-    neymar.mostCommonHour()
+    user_name = "fallencs"
+    createStatusDataBase(api, user_name)
+    #createAllUserData(api, user_name)
+    #monark = ch.Charts(user_name)
+    #neymar.pieChartLikes(3)
+    #neymar.mostCommonHour()
+    
+    save = sf.Save(user_name)
+    save.saveAllTweets()
+    
     
     
