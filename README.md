@@ -1,7 +1,7 @@
 # Twiks
 
 
->## 📱 O twiske é um aplicativo de análise de dados usando a API do Twitter!
+>## 📱 O twiks é um aplicativo de análise de dados usando a API do Twitter!
 
 ### Aplicação foi desenvolvida para praticar meus conhecimentos usando python, banco de dados e análise de dados.
 
