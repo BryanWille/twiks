@@ -25,7 +25,8 @@
 >## 📁 Armazenamento de dados
 
 ### Firestore
-![image](https://user-images.githubusercontent.com/84272231/205071883-4b5d2c1c-ed31-425f-b1c1-80375cdda844.png)
+
+![image](https://user-images.githubusercontent.com/84272231/205072064-b7ce7b3b-85a3-455b-b0a4-d9f913dfdfe4.png)
 
 O Twiks usa o firestore, um banco de dados NoSQL online para armazenar os dados, onde é dividido em coleções e documentos, como na printe abaixa.
 
